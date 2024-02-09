@@ -1,0 +1,13 @@
+package main
+
+templ hello(name string) {
+	<div>Hello, { name }</div>
+}
+
+templ button(buttonName string) {
+	<button onClick={ AlertSomething() }>{ buttonName }</button>
+}
+
+script AlertSomething() {
+	alert("Button clicked!");
+}
